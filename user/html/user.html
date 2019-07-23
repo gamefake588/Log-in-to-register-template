@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录 |　注册</title>
+    <link rel="stylesheet" href="../css/pubilc.css">
+    <link rel="stylesheet" href="../css/user.css">
+</head>
+
+<body>
+
+    <!-- 登录 - 注册 -->
+    <main class="user">
+
+        <h2>HUANGXIAN</h2>
+
+        <!-- 登录 - 注册 -->
+        <article class="form form-up-user">
+            <!-- list -->
+            <ul class="form-list">
+                <li class="user-active">Login</li>
+                <li>Register</li>
+            </ul>
+            <!-- login -->
+            <section class="login user-active" name='row'>
+                <!-- row -->
+                <div class="form-row">
+                    <h5>Email</h5>
+                    <input type="email" id="user_email">
+                </div>
+                <!-- row -->
+                <div class="form-row">
+                    <h5>Password</h5>
+                    <input type="password" id="user_password">
+                </div>
+                <!-- row -->
+                <div class="form-row">
+                    <button class="submit login-submit">SUBMIT</button>
+                </div>
+            </section>
+
+            <!-- register -->
+            <section class="register" name='row'>
+                <!-- row -->
+                <div class="form-row">
+                    <h5>Username</h5>
+                    <input type="text" id="user_name">
+                </div>
+                <!-- row -->
+                <div class="form-row">
+                    <h5>Password</h5>
+                    <input type="Password" id="user_rg_pass">
+                </div>
+                <!-- row -->
+                <div class="form-row">
+                    <h5>Email</h5>
+                    <input type="email" id="user_rg_email">
+                </div>
+                <!-- row -->
+                <div class="form-row">
+                    <h5>Code</h5>
+                    <div class="form-code">
+                        <input type="text" id="user_code">
+                        <button class="Send-out code-submit">发送</button>
+                    </div>
+                </div>
+                <!-- row -->
+                <div class="form-row form-register">
+                    <button class="submit register-submit">SUBMIT</button>
+                </div>
+            </section>
+
+        </article>
+
+        <!-- 头像上传 -->
+        <article class="form form-up-img">
+            <!-- 头像 -->
+            <section class="form-img">
+                <img id="user_ImgModel2" src="http://www.znny8.com/static/user_images/img_15600485088492184.jpg"
+                    style="width: 200px; height: 200px; left: 0px; top: 0px; border-radius: 50%;">
+                <input type="file" id="avatar_file_ImgModel2" accept="image/*"
+                    style="width: 100%; height: 100%; opacity: 0; position: absolute; left: 0px; top: 0px;">
+            </section>
+            <h4 class="img-tips">上传您的图像</h4>
+            <button class="img-submit">完成:)</button>
+        </article>
+
+        <h5>
+            <a href="javascript:history.go(-1)">return</a>
+            login to register
+        </h5>
+
+    </main>
+
+
+    <script src='../js/jquery-3.3.1.min.js'></script>
+    <script src='../js/user.js'></script>
+
+</body>
+
+</html>
